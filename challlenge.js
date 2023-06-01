@@ -6,7 +6,7 @@ const calculateGpa = (student) => {
             name: "John Doe",
             subjects: ["Math", "English", "Science"],
             grades: [3, 4, 2],
-            gpa: 0
+            // gpa: 0
 
         },
         {
@@ -95,14 +95,17 @@ const calculateGpa = (student) => {
     })
     console.log(sum)
 
-    gpa = sum / total_Subjects;
+    gpa = Math.round(sum / total_Subjects);
+    console.log(gpa)
 
     // console.log(gpa)
 
 
 
     stddata.map((std) => {
-        std.gpa = gpa
+
+        // std.gpa = gpa
+        std.gpa = gpa;
     })
 
     // students.filter((std) => {
@@ -123,6 +126,10 @@ const calculateGpa = (student) => {
 
 }
 
-console.log(calculateGpa("Jane Smith"));
+
+
+
+console.log(calculateGpa("John Doe"));
+// console.log(calculateGpa("Jane Smith"));
 // console.log(calculateGpa("Jennifer Lopez"));
 // console.log(calculateGpa("Ivan Clark"));
