@@ -124,5 +124,5 @@ const calculateGpa = (student) => {
 }
 
 console.log(calculateGpa("Jane Smith"));
-console.log(calculateGpa("Jennifer Lopez"));
-console.log(calculateGpa("Ivan Clark"));
+// console.log(calculateGpa("Jennifer Lopez"));
+// console.log(calculateGpa("Ivan Clark"));
