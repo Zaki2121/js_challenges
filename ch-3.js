@@ -61,7 +61,7 @@ const deleteContact = (fname, lname) => {
 addContact('zaki', "Abdullahi", "0907432605");
 addContact('Ali', "Adan", "0907632605");
 
-// console.log(contact);
+console.log(contact);
 // console.log(searchContact('zakis', "Abdullahi"));
 console.log(searchContact('Ali', "Adan"));
 // console.log(searchContact('za', "Abi"));
