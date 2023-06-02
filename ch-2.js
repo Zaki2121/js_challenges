@@ -1,72 +1,72 @@
-// let std_info =
+let std_info =
 
-// {
+{
 
-//     name: "Zaki",
-//     age: 23,
-//     school: "Bosaso",
+    name: "Zaki",
+    age: 23,
+    school: "Bosaso",
 
-// }
-
-
-// delete std_info.school;
-// console.log(std_info)
+}
 
 
-
-
-
-
-// const updateInventory = (inventory, parchasedItems) => {
+delete std_info.school;
+console.log(std_info)
 
 
 
 
 
-//     parchasedItems.forEach((item, i) => {
 
-
-//         if (inventory[item]) {
-
-
-//             inventory[item] -= 1
-//             // console.log(inventory[item])
-//         }
-
-//         if (inventory.bananas == 0) {
-
-
-//             delete inventory.bananas;
+const updateInventory = (inventory, parchasedItems) => {
 
 
 
-//         }
-//         if (inventory.apples == 0) {
 
 
-//             delete inventory.apples;
+    parchasedItems.forEach((item, i) => {
 
 
-
-//         }
-//         if (inventory.oranges == 0) {
+        if (inventory[item]) {
 
 
-//             delete inventory.oranges;
+            inventory[item] -= 1
+            // console.log(inventory[item])
+        }
+
+        if (inventory.bananas == 0) {
 
 
-
-//         }
-//     })
-
-
-
-//     return inventory;
-
-// }
-
-// console.log(updateInventory({ "apples": 10, "bananas": 5, "oranges": 8 }, ["apples", "apples", "apples", "bananas", "oranges", "oranges", "oranges", "oranges", "oranges", "oranges", "oranges", "oranges"]));
+            delete inventory.bananas;
 
 
 
-// // "oranges", "oranges", "oranges", "oranges", "oranges"
+        }
+        if (inventory.apples == 0) {
+
+
+            delete inventory.apples;
+
+
+
+        }
+        if (inventory.oranges == 0) {
+
+
+            delete inventory.oranges;
+
+
+
+        }
+    })
+
+
+
+    return inventory;
+
+}
+
+console.log(updateInventory({ "apples": 10, "bananas": 5, "oranges": 8 }, ["apples", "apples", "apples", "bananas", "oranges", "oranges", "oranges", "oranges", "oranges", "oranges", "oranges", "oranges"]));
+
+
+
+// "oranges", "oranges", "oranges", "oranges", "oranges"

@@ -42,7 +42,7 @@
 // }
 
 
-// const getPlayerInfo = (playername) => {
+// const getPlayerInfo = (team) => {
 
 
 //     const Players = [
@@ -76,17 +76,19 @@
 
 
 
-//     const newPlayer = Players.findIndex((player) => (player.name == playername));
+//     const newPlayer = Players.filter((player) => (player.club === team));
 
 
 
-//     Players.splice(newPlayer, 1);
+//     // Players.splice(newPlayer, 1);
 
-//     // console.log("After  ")
+//     console.log(newPlayer)
 
 
 
-//     console.log(Players);
+//     // console.log(Players);
+
+//     return newPlayer;
 
 
 
@@ -94,7 +96,7 @@
 // }
 
 
-// getPlayerInfo("CR7")
+// getPlayerInfo("PSG")
 
 
 
